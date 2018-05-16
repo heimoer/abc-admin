@@ -1,0 +1,17 @@
+.content-header{
+	background-color: #f3f3f3;
+	background: linear-gradient(to bottom,#F8F8F8 0,#eeeeee 100%);
+  		background-repeat: repeat-x;
+  		text-align: left;
+    border-top:1px solid #D5D5D5;
+    border-bottom:1px solid #D5D5D5;
+    height:35px;
+}
+.content-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #575765;
+    height: 28px;
+    line-height: 35px;
+    margin-left: 10px;
+}

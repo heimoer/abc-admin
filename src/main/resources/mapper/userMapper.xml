@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.abc.dao.UserDAO">
+	<select id="getUser" resultType="UserResult">
+		select * from user
+		where 1=1
+		<if test="name!=null">
+		and name like CONCAT('%',#{name},'%') 
+		</if>
+		<if test="phone!=null">
+		and phone like CONCAT('%',#{phone},'%') 
+		</if>
+		<if test="startTime!='' and startTime!=null">
+    	<![CDATA[  
+    	   and date_format(createDate,'%Y%m%d') >= date_format(#{startTime,jdbcType=VARCHAR},'%Y%m%d')
+    	]]>
+    	</if>
+    	<if test="endTime!='' and endTime!=null">
+    	<![CDATA[  
+    	   and date_format(createDate,'%Y%m%d') <= date_format(#{endTime,jdbcType=VARCHAR},'%Y%m%d')
+    	]]>
+    	</if>
+		order by createDate desc
+	</select>
+	
+</mapper>

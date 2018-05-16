@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+body {
+	background-image: url(../../images/login/pingppu.png);
+	background-repeat: repeat;
+}
+
+img{
+	border:none;
+}
+
+#backend-login {
+	height: 190px;
+	width: 337px;
+	padding-top: 82px;
+	padding-left: 89px;
+	background-color: #FFF;
+	position: relative;
+}
+.form-text {
+	height: 32px;
+	width: 199px;
+	border: 1px solid #e5e5e5;
+	border-radius: 6px;
+	padding-left: 38px;
+	margin-bottom: 12px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #a2acb5;
+}
+.bg1 {
+	background-image: url(../../images/login/backend_login_03.jpg);
+	background-position: 6px center;
+	background-repeat: no-repeat;
+}
+
+.bg2 {
+	background-image: url(../../images/login/backend_login_06.jpg);
+	background-position: 6px center;
+	background-repeat: no-repeat;
+}
+.sub {
+	height: auto;
+	width: auto;
+	padding-top: 18px;
+	padding-right: 98px;
+}
+
+.sub:after {
+		content:' ';
+	height:0;
+	display:block;
+	clear:both;
+}
+
+.font-color {
+	color: #475058;
+}
+
+.sub span {
+	font-size: 14px;
+	color: #a2acb5;
+	font-family: "微软雅黑";
+}
+.sub .form-checkbox {
+	float: left;
+	margin-top: 8px;
+}
+.sub .form-button {
+	height: 30px;
+	width: 237px;
+	background-image: url(../../images/login/anniu.png);
+	background-repeat: repeat-x;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+}
+.sub span {
+	display: block;
+	float: left;
+	padding-top: 2px;
+	padding-left: 8px;
+}
+.login-logo {
+	position: absolute;
+	left: 153px;
+	top: -69px;
+}
